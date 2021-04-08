@@ -49,7 +49,7 @@ for line in open(input_vcf):
 	
 
 print (len(germline))
-print ()
+print ("\n")
 print (len(somatic))
 print ("\n")
 print (len(somatic.intersection(germline)))
