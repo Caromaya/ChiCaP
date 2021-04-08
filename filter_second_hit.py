@@ -24,12 +24,12 @@ for line in open(input_vcf):
 	#We check if germline
 	content[-2] 
 
-	if "./.:." in content[-2]:
+	if ("./.:." in content[-2]) or ("0/0" in content[-2]):
 		in_germline=False
 	else :
 		in_germline=True
 
-	if "./.:." in content[-1]:
+	if ("./.:." in content[-1]) or ("0/0" in content[-1]):
 		in_somatic=False
 	else :
 		in_somatic=True
